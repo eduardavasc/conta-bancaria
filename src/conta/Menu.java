@@ -1,5 +1,6 @@
 package conta;
 
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
@@ -24,6 +25,11 @@ public class Menu {
 		System.out.println("*****************************************************");
 		System.out.println("Entre com a opção desejada:                          ");
 		System.out.println("                                                     " + Cores.TEXT_RESET);
+		
+		Conta c1 = new Conta(123456, 123, 1, "Maria dos Santos", 2500.0f);
+		c1.visualizar();  
+		
+	
+	
 	}
-
 }
