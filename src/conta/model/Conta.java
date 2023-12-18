@@ -73,14 +73,14 @@ public class Conta {
 
 	public void visualizar() {
 
-		String tipo = "";
+		String tipoConta = "";
 
 		switch (this.tipo) {
 		case 1:
-			tipo = "Conta Corrente";
+			tipoConta = "Conta Corrente";
 			break;
 		case 2:
-			tipo = "Conta Poupança";
+			tipoConta = "Conta Poupança";
 			break;
 		}
 		System.out.println(Cores.TEXT_YELLOW_BOLD+ Cores.ANSI_BLACK_BACKGROUND);
@@ -89,7 +89,7 @@ public class Conta {
 		System.out.println("***********************************************************");
 		System.out.println("                    Numero da Conta: " + this.numero        );
 		System.out.println("Agência: " + this.agencia);
-		System.out.println("Tipo da Conta: " + tipo);
+		System.out.println("Tipo da Conta: " + tipoConta);
 		System.out.println("Titular: " + this.titular);
 		System.out.println("Saldo: " + this.saldo);
 	}
